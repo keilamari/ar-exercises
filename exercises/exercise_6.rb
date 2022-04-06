@@ -10,14 +10,6 @@ puts "----------"
 
 # Your code goes here ...
 
-class Store 
-  has_many :employees
-end
-
-class Employee 
-  belongs_to :store
-end
-
 @store1.employees.create(first_name: "Brenda", last_name: "Walsh", hourly_rate: 60)
 @store1.employees.create(first_name: "Kelly", last_name: "Taylor", hourly_rate: 50)
 @store1.employees.create(first_name: "Donna", last_name: "Martin", hourly_rate: 40)
